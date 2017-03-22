@@ -1,0 +1,29 @@
+{
+  "name": "alexa-mensa-munich",
+  "version": "0.0.1",
+  "description": "Skill for getting the meals of canteens in munich.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "alexa",
+    "skill",
+    "mensa",
+    "canteen",
+    "munich",
+    "university",
+    "tum",
+    "lmu"
+  ],
+  "author": "Max Muth",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "alexa-sdk": "^1.0.6",
+    "moment": "^2.18.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mammuth/alexa-mensa-munich.git"
+  }
+}

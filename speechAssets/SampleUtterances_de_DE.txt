@@ -1,0 +1,7 @@
+GetMealsForMensa Mahlzeiten in Garching
+GetMealsForMensa Was gibt es in Garching zu essen
+GetMealsForMensa Was gibt es {Date} in der Mensa Garching
+GetMealsForMensa Was gibt es {Date} zu essen in Garching
+GetMealsForMensa Was gibt es {Date} zu essen in der Mensa
+GetMealsForMensa Was gibt es {Date} zu essen
+GetMealsForMensa Mahlzeiten Mensa Garching
