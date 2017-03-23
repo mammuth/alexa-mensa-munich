@@ -20,7 +20,7 @@ const handlers = {
         const dateSlot = this.event.request.intent.slots.Date
         const today = moment().format('YYYY-MM-DD')
         const date = dateSlot != undefined && dateSlot.value != undefined ? dateSlot.value : today;
-        const dateName = dateSlot != undefined & dateSlot.value != undefined && dateSlot.value != today ? moment(date).locale('de').format('dddd') : 'Heute';
+        const dateName = dateSlot != undefined && dateSlot.value != undefined && dateSlot.value != today ? moment(date).locale('de').format('dddd') : 'Heute';
 
         console.log('Date:', date, 'DateName:', dateName)
 
@@ -30,8 +30,8 @@ const handlers = {
         }
 
         queryMeals(requestParams,  myResult => {
-            const meals = getFormattedMeals(myResult);
-            const outputSpeech = meals.slice(0, meals.length - 1).join(', <break time="700ms" /> ') + ' <break time="500ms" />' + ' und ' + meals[meals.length - 1];
+            const meals = getFormattedMeals(myResult)
+            const outputSpeech = meals.slice(0, meals.length - 1).join(', <break time="600ms" /> ') + ' <break time="500ms" />' + ' und zuletzt auch noch ' + meals[meals.length - 1];
             console.log(outputSpeech);
             this.emit(':tell', dateName + ' gibt es ' + outputSpeech);
         }

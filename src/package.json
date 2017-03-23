@@ -1,7 +1,7 @@
 {
   "name": "alexa-mensa-munich",
   "version": "0.0.1",
-  "description": "Skill for getting the meals of canteens in munich.",
+  "description": "Alexa skill for getting the meals of canteens in munich.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,7 +16,11 @@
     "tum",
     "lmu"
   ],
-  "author": "Max Muth",
+  "author": {
+    "name": "Max Muth",
+    "email": "maximilian.muth@tum.de",
+    "url": "https://www.maxi-muth.de"
+  },
   "license": "Apache-2.0",
   "dependencies": {
     "alexa-sdk": "^1.0.6",
