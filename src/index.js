@@ -92,9 +92,10 @@ function getDate(dateSlot) {
 
 function getFormattedMeals(jsonResponse) {
     /* Returns an array of formatted meals like ">Schinkennudeln (Vorderschinken) mit Zwiebeln und Ei für 1.9€" */
-    const categoryFilter = ['Tagesgericht 1', 'Tagesgericht 2', 'Tagesgericht 3', 'Tagesgericht 4', 'Aktionsessen 1', 'Aktionsessen 2', 'Aktionsessen 3', 'Aktionsessen 4', 'Biogericht 1', 'Biogericht 2', 'Biogericht 3', 'Biogericht 4'];
+    // const categoryFilter = ['Tagesgericht 1', 'Tagesgericht 2', 'Tagesgericht 3', 'Tagesgericht 4', 'Aktionsessen 1', 'Aktionsessen 2', 'Aktionsessen 3', 'Aktionsessen 4', 'Biogericht 1', 'Biogericht 2', 'Biogericht 3', 'Biogericht 4'];
+    const categoriesToIgnore = ['Beilagen', 'Aktion'];
     return jsonResponse
-        .filter(meal => categoryFilter.indexOf(meal.category) !== -1)
+        .filter(meal => categoriesToIgnore.indexOf(meal.category) === -1)
         .map(meal => meal.prices.students != null ? meal.name + ' für ' + meal.prices.students + '€' : meal.name);
 }
 
