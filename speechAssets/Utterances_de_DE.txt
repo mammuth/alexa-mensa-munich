@@ -3,3 +3,10 @@ GetMealsForMensa Was gibt es in der {Canteen} zu essen
 GetMealsForMensa Was gibt es {Date} in der {Canteen}
 GetMealsForMensa Was gibt es {Date} zu essen in {Canteen}
 GetMealsForMensa Was gibt es {Date} zu essen
+GetMealsForMensa den Gerichten in der {Canteen}
+GetMealsForMensa dem Essen in der {Canteen}
+GetMealsForMensa dem Essen in der {Canteen} am {Date}
+GetMealsForMensa Was es in der {Canteen} zu essen gibt
+GetMealsForMensa Was es {Date} in der {Canteen} gibt
+GetMealsForMensa Was es {Date} zu essen in {Canteen} gibt
+GetMealsForMensa Was es {Date} zu essen gibt
