@@ -96,7 +96,8 @@ function getFormattedMeals(jsonResponse) {
     const categoriesToIgnore = ['Beilagen', 'Aktion'];
     return jsonResponse
         .filter(meal => categoriesToIgnore.indexOf(meal.category) === -1)
-        .map(meal => meal.prices.students != null ? meal.name + ' für ' + meal.prices.students + '€' : meal.name);
+        // .map(meal => meal.prices.students != null ? meal.name + ' für ' + meal.prices.students + '€' : meal.name);
+        .map(meal => meal.name);
 }
 
 function queryMeals(myData, callback) {
