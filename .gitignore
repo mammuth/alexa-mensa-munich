@@ -1,2 +1,4 @@
 src/node_modules
 src/*.zip
+.idea/
+*.iml

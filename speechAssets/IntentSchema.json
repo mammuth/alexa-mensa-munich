@@ -6,6 +6,10 @@
         {
           "name": "Date",
           "type": "AMAZON.DATE"
+        },
+        {
+          "name": "Canteen",
+          "type": "CANTEEN"
         }
       ]
     },
