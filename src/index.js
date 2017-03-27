@@ -26,6 +26,7 @@ const handlers = {
         const canteenSlot = this.event.request.intent.slots.Canteen;
         if (canteenSlot == undefined || canteenSlot.value == undefined) {
             this.emit('AMAZON.HelpIntent');
+            return false;
         }
 
         const date = getDate(this.event.request.intent.slots.Date);
@@ -35,7 +36,11 @@ const handlers = {
             'date': date.date
         };
         console.log('requestParams', requestParams);
-        queryMeals(requestParams, myResult => {
+        queryMeals(requestParams, (success, myResult) => {
+            if (!success) {
+                this.emit(':tell', 'Am ' + date.dateName + ' scheint es kein Essen zu geben. Sorry, du musst hungern.');
+                return false;
+            }
             const meals = getFormattedMeals(myResult);
             const outputSpeech = meals.slice(0, meals.length - 1).join(', <break time="600ms" /> ') + ' <break time="500ms" />' + ' und zuletzt auch noch ' + meals[meals.length - 1];
             console.log(outputSpeech);
@@ -65,6 +70,7 @@ function getCanteen(that, canteenSlot) {
     const resultCanteens = canteens.filter(canteen => canteen.names.indexOf(canteenQuery) !== -1);
     if (resultCanteens.length === 0) {
         that.emit('AMAZON.HelpIntent');
+        return false;
     } else {
         return {
             'name': resultCanteens[0].names[0],
@@ -109,8 +115,11 @@ function queryMeals(myData, callback) {
         });
 
         res.on('end', () => {
-            callback(JSON.parse(returnData));
-
+            if (returnData == '') {
+                callback(false, returnData)
+            } else {
+                callback(true, JSON.parse(returnData));
+            }
         });
 
         res.on('error', e => {
