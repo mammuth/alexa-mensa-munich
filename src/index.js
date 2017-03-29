@@ -54,13 +54,13 @@ const handlers = {
         this.emit(':ask', speechOutput, reprompt);
     },
     'AMAZON.CancelIntent': function () {
-        this.emit(':tell', this.t('STOP_MESSAGE'));
+        this.emit(':tell', randomPhrase(this.t('STOP_MESSAGE')));
     },
     'AMAZON.StopIntent': function () {
-        this.emit(':tell', this.t('STOP_MESSAGE'));
+        this.emit(':tell', randomPhrase(this.t('STOP_MESSAGE')));
     },
     'SessionEndedRequest': function () {
-        this.emit(':tell', this.t('STOP_MESSAGE'));
+        this.emit(':tell', randomPhrase(this.t('STOP_MESSAGE')));
     },
 };
 
@@ -98,6 +98,12 @@ function getFormattedMeals(jsonResponse) {
         .filter(meal => categoriesToIgnore.indexOf(meal.category) === -1)
         // .map(meal => meal.prices.students != null ? meal.name + ' für ' + meal.prices.students + '€' : meal.name);
         .map(meal => meal.name);
+}
+
+function randomPhrase(phrasesArray) {
+    var i = 0;
+    i = Math.floor(Math.random() * phrasesArray.length);
+    return phrasesArray[i];
 }
 
 function queryMeals(myData, callback) {
