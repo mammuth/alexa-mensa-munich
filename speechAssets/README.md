@@ -1,7 +1,7 @@
 I will manually paste utterances and custom slots into the skill when releasing new versions.
 
 # Utterances
-Utterances can be edited in the corresponding files.
+Use the expander-file and the tool at http://www.makermusings.com/amazon-echo-utterance-expander/ to generate the utterances.
 
 # Custom Slots
 ### Canteen Slot
