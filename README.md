@@ -15,7 +15,10 @@ An Amazon Alexa skill that tells you the menu of all canteens in Munich. The ski
 
 - _"Alexa, öffne Mensa München"_
 - _"Alexa, frage Mensa München was gibt es am Mittwoch in Garching?"_
-- _"Alexa, sage Mensa München, Mahlzeiten Stammgelände"_
+- _"Alexa, frage Mensa München nach dem Speiseplan der Mensa Leopoldstraße"_
+- _"Mahlzeiten Stammgelände"_
+- _"Speiseplan der Mensa in der Arcisstraße am Freitag"_
+- _"Mensa Leopoldstraße"_
 
 ### Supported Canteens
 - Garching

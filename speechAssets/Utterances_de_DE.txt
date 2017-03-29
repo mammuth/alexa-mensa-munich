@@ -16,22 +16,36 @@ GetMealsForMensa gerichte in der {Canteen}
 GetMealsForMensa gerichte in der {Canteen} {Date}
 GetMealsForMensa gerichte {Canteen}
 GetMealsForMensa gerichte {Canteen} {Date}
+GetMealsForMensa in der {Canteen}
+GetMealsForMensa in der {Canteen} {Date}
 GetMealsForMensa mahlzeiten in der {Canteen}
 GetMealsForMensa mahlzeiten in der {Canteen} {Date}
 GetMealsForMensa mahlzeiten {Canteen}
 GetMealsForMensa mahlzeiten {Canteen} {Date}
-GetMealsForMensa was es am {Date} in der {Canteen} gibt
-GetMealsForMensa was es am {Date} in der {Canteen} zu essen gibt
 GetMealsForMensa was es in der {Canteen} gibt
 GetMealsForMensa was es in der {Canteen} zu essen gibt
+GetMealsForMensa was es in {Canteen} gibt
+GetMealsForMensa was es in {Canteen} zu essen gibt
+GetMealsForMensa was es {Date} in der {Canteen} gibt
+GetMealsForMensa was es {Date} in der {Canteen} zu essen gibt
+GetMealsForMensa was es {Date} in {Canteen} gibt
+GetMealsForMensa was es {Date} in {Canteen} zu essen gibt
 GetMealsForMensa was gibt es in der {Canteen}
 GetMealsForMensa was gibt es in der {Canteen} zu essen
+GetMealsForMensa was gibt es in {Canteen}
+GetMealsForMensa was gibt es in {Canteen} zu essen
 GetMealsForMensa was gibt es {Date} in der {Canteen}
 GetMealsForMensa was gibt es {Date} in der {Canteen} zu essen
+GetMealsForMensa was gibt es {Date} in {Canteen}
+GetMealsForMensa was gibt es {Date} in {Canteen} zu essen
 GetMealsForMensa was steht auf dem angebot in der {Canteen}
+GetMealsForMensa was steht auf dem angebot in {Canteen}
 GetMealsForMensa was steht auf dem karte in der {Canteen}
+GetMealsForMensa was steht auf dem karte in {Canteen}
 GetMealsForMensa was steht auf dem menü in der {Canteen}
+GetMealsForMensa was steht auf dem menü in {Canteen}
 GetMealsForMensa was steht auf dem speiseplan in der {Canteen}
+GetMealsForMensa was steht auf dem speiseplan in {Canteen}
 GetMealsForMensa was steht in der {Canteen} auf dem angebot
 GetMealsForMensa was steht in der {Canteen} auf dem angebot {Date}
 GetMealsForMensa was steht in der {Canteen} auf dem karte
@@ -41,6 +55,12 @@ GetMealsForMensa was steht in der {Canteen} auf dem menü {Date}
 GetMealsForMensa was steht in der {Canteen} auf dem speiseplan
 GetMealsForMensa was steht in der {Canteen} auf dem speiseplan {Date}
 GetMealsForMensa was steht {Date} auf dem angebot in der {Canteen}
+GetMealsForMensa was steht {Date} auf dem angebot in {Canteen}
 GetMealsForMensa was steht {Date} auf dem karte in der {Canteen}
+GetMealsForMensa was steht {Date} auf dem karte in {Canteen}
 GetMealsForMensa was steht {Date} auf dem menü in der {Canteen}
+GetMealsForMensa was steht {Date} auf dem menü in {Canteen}
 GetMealsForMensa was steht {Date} auf dem speiseplan in der {Canteen}
+GetMealsForMensa was steht {Date} auf dem speiseplan in {Canteen}
+GetMealsForMensa {Canteen}
+GetMealsForMensa {Canteen} {Date}
