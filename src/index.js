@@ -15,11 +15,11 @@ exports.handler = function (event, context, callback) {
 
 const handlers = {
     'LaunchRequest': function () {
-        this.emit('AMAZON.HelpIntent');
+        this.emit(':ask', this.t('WELCOME_MESSAGE'), this.t('WELCOME_REPROMPT'));
     },
 
     'Unhandled': function () {
-        this.emit('AMAZON.HelpIntent');
+        this.emit(':ask', this.t('WELCOME_MESSAGE'), this.t('WELCOME_REPROMPT'));
     },
 
     'GetMealsForMensa': function () {
