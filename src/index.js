@@ -44,7 +44,7 @@ const handlers = {
             const meals = getFormattedMeals(myResult);
             const outputSpeech = meals.slice(0, meals.length - 1).join(', <break time="600ms" /> ') + ' <break time="500ms" />' + ' und zuletzt auch noch ' + meals[meals.length - 1];
             console.log(outputSpeech);
-            this.emit(':tell', 'In der ' + canteen.name + ' gibt es ' + date.dateName + ' ' + outputSpeech);
+            this.emit(':tell', 'In der ' + canteen.verboseName + ' gibt es ' + date.dateName + ' ' + outputSpeech);
         });
     },
 
@@ -67,13 +67,13 @@ const handlers = {
 function getCanteen(that, canteenSlot) {
     const canteenQuery = canteenSlot.value.toLowerCase();
     console.log('canteenQuery', canteenQuery);
-    const resultCanteens = canteens.filter(canteen => canteen.names.indexOf(canteenQuery) !== -1);
+    const resultCanteens = canteens.filter(canteen => canteen.synonyms.indexOf(canteenQuery) !== -1);
     if (resultCanteens.length === 0) {
         that.emit('AMAZON.HelpIntent');
         return false;
     } else {
         return {
-            'name': resultCanteens[0].names[0],
+            'verboseName': resultCanteens[0].verboseName,
             'id': resultCanteens[0].id
         };
     }
@@ -81,8 +81,8 @@ function getCanteen(that, canteenSlot) {
 
 function getDate(dateSlot) {
     const today = moment().format('YYYY-MM-DD');
-    const date = dateSlot != undefined && dateSlot.value != undefined ? dateSlot.value : today;
-    const dateName = dateSlot != undefined && dateSlot.value != undefined && dateSlot.value != today ? moment(date).locale('de').format('dddd') : 'Heute';
+    const date = dateSlot != undefined && dateSlot.value != undefined && dateSlot.value !== '' ? dateSlot.value : today;
+    const dateName = dateSlot != undefined && dateSlot.value != undefined && dateSlot.value != today && dateSlot.value !== ''? moment(date).locale('de').format('dddd') : 'Heute';
     console.log('Date:', date, 'DateName:', dateName);
     return {
         'dateName': dateName,
