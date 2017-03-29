@@ -8,6 +8,8 @@ GetMealsForMensa den gerichten in der {Canteen}
 GetMealsForMensa den gerichten in der {Canteen} {Date}
 GetMealsForMensa den mahlzeiten in der {Canteen}
 GetMealsForMensa den mahlzeiten in der {Canteen} {Date}
+GetMealsForMensa der speisekarte in der {Canteen}
+GetMealsForMensa der speisekarte in der {Canteen} {Date}
 GetMealsForMensa essen in der {Canteen}
 GetMealsForMensa essen in der {Canteen} {Date}
 GetMealsForMensa essen {Canteen}

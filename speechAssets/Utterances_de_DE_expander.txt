@@ -3,6 +3,6 @@ See: http://www.makermusings.com/amazon-echo-utterance-expander/
 GetMealsForMensa was gibt es (/{Date}) in (/der) {Canteen} (/zu essen)
 GetMealsForMensa was es (/{Date}) in (/der) {Canteen} (/zu essen) gibt
 GetMealsForMensa (/essen/mahlzeiten/gerichte) (/in der) {Canteen} (/{Date})
-GetMealsForMensa (dem essen/den gerichten/den mahlzeiten/dem menü/dem angebot) in der {Canteen} (/{Date})
+GetMealsForMensa (dem essen/den gerichten/den mahlzeiten/dem menü/dem angebot/der speisekarte) in der {Canteen} (/{Date})
 GetMealsForMensa was steht (/{Date}) auf dem (speiseplan/menü/karte/angebot) in (/der) {Canteen}
 GetMealsForMensa was steht in der {Canteen} auf dem (speiseplan/menü/karte/angebot) (/{Date})
