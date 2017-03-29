@@ -32,7 +32,11 @@ module.exports = [
             "mensa stammgelände",
             "mensa am stammgelände",
             "mensa in der arcisstraße",
-            "mensa bei der arcisstraße"],
+            "mensa bei der arcisstraße",
+            "arktis straße",
+            "kiss straße",
+            "artzes straße"
+        ],
         "id": 138
     },
     {
