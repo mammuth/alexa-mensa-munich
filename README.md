@@ -1,8 +1,8 @@
-# Mensa München Skill
+# Mensa München Alexa Skill
 
 An Amazon Alexa skill that tells you the menu of all canteens in Munich. The skill uses the API of openmensa.org
 
-<img width="147" alt="screen shot 2017-04-01 at 22 34 31" src="https://cloud.githubusercontent.com/assets/3121306/24582265/f7f39db4-172b-11e7-8258-c6edc82cb1ef.png">
+<img width="996" alt="screen shot 2017-04-01 at 23 37 42" src="https://cloud.githubusercontent.com/assets/3121306/24582649/5e42ee32-1734-11e7-8031-18f7a4ebbcd3.png">
 
 
 ### Status
