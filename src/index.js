@@ -38,7 +38,7 @@ const handlers = {
         console.log('requestParams', requestParams);
         queryMeals(requestParams, (success, myResult) => {
             if (!success) {
-                this.emit(':tell', 'Am ' + date.dateName + ' scheint es kein Essen zu geben. Sorry, du musst hungern.');
+                this.emit(':tell', date.dateName + ' scheint es kein Essen zu geben. Sorry, du musst hungern.');
                 return false;
             }
             const meals = getFormattedMeals(myResult);
@@ -82,7 +82,7 @@ function getCanteen(that, canteenSlot) {
 function getDate(dateSlot) {
     const today = moment().format('YYYY-MM-DD');
     const date = dateSlot != undefined && dateSlot.value != undefined && dateSlot.value !== '' ? dateSlot.value : today;
-    const dateName = dateSlot != undefined && dateSlot.value != undefined && dateSlot.value != today && dateSlot.value !== ''? moment(date).locale('de').format('dddd') : 'Heute';
+    const dateName = dateSlot != undefined && dateSlot.value != undefined && dateSlot.value != today && dateSlot.value !== '' ? 'Am ' + moment(date).locale('de').format('dddd') : 'Heute';
     console.log('Date:', date, 'DateName:', dateName);
     return {
         'dateName': dateName,
