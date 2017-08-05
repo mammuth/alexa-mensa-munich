@@ -24,7 +24,7 @@ Install the _"Mensa München"_ skill from the Alexa Skill store https://www.amaz
 
 
 ### Supported Canteens
-- Garching
+- TUM Mensa Garching
 - Leopoldstraße
 - Arcisstraße (theoretically, but alexa always understands something different which makes it unusable...)
 - Martinsried
