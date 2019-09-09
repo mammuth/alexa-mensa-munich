@@ -1,5 +1,7 @@
 # Mensa München Alexa Skill
 
+<a href="https://www.buymeacoffee.com/mammuth" target="_blank"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+
 An Amazon Alexa skill that tells you the menu of all canteens in Munich. The skill uses the API of openmensa.org
 
 <img width="996" alt="screen shot 2017-04-01 at 23 37 42" src="https://cloud.githubusercontent.com/assets/3121306/24582649/5e42ee32-1734-11e7-8031-18f7a4ebbcd3.png">
